@@ -4,7 +4,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Skills</title>
@@ -14,88 +13,65 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<script src="https://unpkg.com/lucide@latest"></script>
-
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-
-background:#111;
-font-family:Inter,sans-serif;
-padding:30px;
-
+    background:#111;
+    font-family:Inter,sans-serif;
+    padding:30px;
 }
 
 .grid{
-
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:18px;
-
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
 }
 
 .skill{
+    display:flex;
+    align-items:center;
+    gap:14px;
 
-display:flex;
-align-items:center;
+    background:#1c1c1c;
+    border:1px solid #2b2b2b;
+    border-radius:18px;
 
-gap:14px;
+    padding:18px 22px;
 
-background:#1c1c1c;
+    color:white;
+    font-size:26px;
+    font-weight:600;
 
-border:1px solid #2b2b2b;
-
-border-radius:18px;
-
-padding:18px 22px;
-
-color:white;
-
-font-size:26px;
-
-font-weight:600;
-
-transition:.25s;
-
-cursor:default;
-
+    transition:.25s;
+    cursor:default;
 }
 
 .skill:hover{
-
-background:#242424;
-
-transform:translateY(-2px);
-
+    background:#242424;
+    transform:translateY(-2px);
 }
 
 .icon{
-
-width:26px;
-height:26px;
-
-color:#bfbfbf;
-
+    width:26px;
+    height:26px;
+    object-fit:contain;
+    flex-shrink:0;
 }
 
 @media(max-width:900px){
 
 .grid{
-
-grid-template-columns:1fr;
-
+    grid-template-columns:1fr;
 }
 
 .skill{
-
-font-size:22px;
-
+    font-size:22px;
 }
 
 }
@@ -108,39 +84,36 @@ font-size:22px;
 
 <div class="grid">
 
-<div class="skill"><i data-lucide="image" class="icon"></i>Adobe Photoshop</div>
+<div class="skill"><img src="icons/photoshop.svg" class="icon" alt="">Adobe Photoshop</div>
 
-<div class="skill"><i data-lucide="pen-tool" class="icon"></i>Adobe Illustrator</div>
+<div class="skill"><img src="icons/adobe illustrator.svg" class="icon" alt="">Adobe Illustrator</div>
 
-<div class="skill"><i data-lucide="clapperboard" class="icon"></i>Adobe After Effects</div>
+<div class="skill"><img src="icons/after effects.svg" class="icon" alt="">Adobe After Effects</div>
 
-<div class="skill"><i data-lucide="film" class="icon"></i>Adobe Premiere Pro</div>
+<div class="skill"><img src="icons/adobe premiere.svg" class="icon" alt="">Adobe Premiere Pro</div>
 
-<div class="skill"><i data-lucide="layout-grid" class="icon"></i>Figma</div>
+<div class="skill"><img src="icons/figma.svg" class="icon" alt="">Figma</div>
 
-<div class="skill"><i data-lucide="book-open" class="icon"></i>Adobe InDesign</div>
+<div class="skill"><img src="icons/adobe indesign.svg" class="icon" alt="">Adobe InDesign</div>
 
-<div class="skill"><i data-lucide="notebook-tabs" class="icon"></i>Notion</div>
+<div class="skill"><img src="icons/notion.svg" class="icon" alt="">Notion</div>
 
-<div class="skill"><i data-lucide="sparkles" class="icon"></i>Motion Design</div>
+<div class="skill"><img src="icons/motion design.svg" class="icon" alt="">Motion Design</div>
 
-<div class="skill"><i data-lucide="palette" class="icon"></i>Graphic Design</div>
+<div class="skill"><img src="icons/graphic design.svg" class="icon" alt="">Graphic Design</div>
 
-<div class="skill"><i data-lucide="play-circle" class="icon"></i>Video Editing</div>
+<div class="skill"><img src="icons/video editing.svg" class="icon" alt="">Video Editing</div>
 
-<div class="skill"><i data-lucide="smartphone" class="icon"></i>Content Creation</div>
+<div class="skill"><img src="icons/content creation.svg" class="icon" alt="">Content Creation</div>
 
-<div class="skill"><i data-lucide="line-chart" class="icon"></i>Creative Strategy</div>
+<div class="skill"><img src="icons/creative strategy.svg" class="icon" alt="">Creative Strategy</div>
 
-<div class="skill"><i data-lucide="megaphone" class="icon"></i>Digital Marketing</div>
+<div class="skill"><img src="icons/digital marketing.svg" class="icon" alt="">Digital Marketing</div>
 
-<div class="skill"><i data-lucide="lightbulb" class="icon"></i>Branding</div>
+<div class="skill"><img src="icons/branding.svg" class="icon" alt="">Branding</div>
 
 </div>
 
-<script>
-lucide.createIcons();
-</script>
-
 </body>
+
 </html>
